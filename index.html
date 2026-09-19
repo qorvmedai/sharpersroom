@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shapers Room | A Business-Building Environment for Ambitious Builders</title>
+  <meta name="description" content="The Shapers Room is a business-building environment for ambitious entrepreneurs, founders and creators who want to think better, build better, sell better and position their businesses for the future.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Shapers Room | Think. Build. Sell. Scale.">
+  <meta property="og:description" content="A business-building environment for ambitious entrepreneurs, founders and creators who want to think better, build better, sell better and position their businesses for the future.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-room.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       0. WELCOME SPLASH SCREEN
+       ═══════════════════════════════════════════════════════ -->
+  <div id="welcome-screen" class="welcome-screen" role="dialog" aria-label="Welcome intro">
+    <div class="welcome-content">
+      <div class="welcome-logo-anim">
+        <div class="welcome-logo-ring" aria-hidden="true"></div>
+        <img src="assets/images/TSR.jpg.jpeg" alt="The Shapers Room Logo" class="welcome-logo-img">
+        <video id="welcome-video" autoplay muted playsinline preload="auto" src="assets/images/IMG_3831.MOV.mp4" aria-label="The Shapers Room logo animation"></video>
+      </div>
+      <div class="welcome-text-anim">
+        <span class="welcome-brand">THE SHAPERS ROOM</span>
+        <span class="welcome-tagline">Think. Build. Sell. Scale.</span>
+      </div>
+      <button id="welcome-skip" class="welcome-skip-btn" aria-label="Skip introduction">
+        Enter The Room <span class="btn-arrow">&rarr;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       1. NAVIGATION
+       ═══════════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="The Shapers Room, go to homepage">THE SHAPERS ROOM</a>
+
+      <div class="nav-links" role="menubar">
+        <a href="#home" role="menuitem">Home</a>
+        <a href="#the-room" role="menuitem">The Room</a>
+        <a href="#benefits" role="menuitem">What You Get</a>
+        <a href="#2030" role="menuitem">2030</a>
+        <a href="#about" role="menuitem">Founder</a>
+        <a href="#speaker" role="menuitem">Speaker</a>
+        <a href="#testimonials" role="menuitem">Testimonials</a>
+        <a href="#faq" role="menuitem">FAQ</a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="#pricing" class="btn btn-primary" data-action="join">
+          Join The Room <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav-mobile" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+      <a href="#home">Home</a>
+      <a href="#the-room">The Room</a>
+      <a href="#benefits">What You Get</a>
+      <a href="#2030">2030</a>
+      <a href="#about">Founder</a>
+      <a href="#speaker">Speaker</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing" class="btn btn-primary btn-large" data-action="join">
+        Join The Shapers Room <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════
+         2. HERO SECTION
+         ═══════════════════════════════════════════════════════ -->
+    <section class="hero section-dark" id="home" aria-label="Hero">
+      <div class="hero-bg" data-parallax>
+        <img src="assets/images/hero-room.png" alt="A sophisticated workspace environment representing where ambitious builders shape their businesses" loading="eager">
+      </div>
+      <div class="hero-accent" aria-hidden="true"></div>
+      <div class="hero-accent-2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-label" data-animate>The Room Behind the Building</span>
+        <h1 class="display-xl hero-headline" data-animate data-animate-delay="1">
+          What if your next level<br> doesn't need more information<br> but a <span class="serif-accent">better room?</span>
+        </h1>
+        <p class="hero-sub" data-animate data-animate-delay="2">
+          The Shapers Room is a business-building environment for ambitious entrepreneurs, founders and creators who want to think better, build better, sell better and position their businesses for the future.
+        </p>
+        <div class="hero-actions" data-animate data-animate-delay="3">
+          <a href="#pricing" class="btn btn-primary btn-xl" data-action="join">
+            Enter The Shapers Room <span class="btn-arrow">→</span>
+          </a>
+        </div>
+        <p class="hero-support" data-animate data-animate-delay="4" style="margin-top: 1.5rem;">
+          Built for people who are serious about building.
+        </p>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         3. POSITIONING SECTION
+         ═══════════════════════════════════════════════════════ -->
+    <section class="positioning section section-light" id="the-room" aria-labelledby="positioning-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Positioning</span>
+        <div class="positioning-statement" data-animate data-animate-delay="1">
+          <h2 id="positioning-heading" class="display-md">This is not another community.</h2>
+        </div>
+        <p class="positioning-desc" data-animate data-animate-delay="2">
+          The Shapers Room is a business-building environment designed to help you make better decisions, access better thinking, build meaningful relationships and execute with greater clarity.
+        </p>
+
+        <div class="pillars" data-animate data-animate-delay="3">
+          <div class="pillar">
+            <span class="pillar-number">01</span>
+            <div class="pillar-word">Think<span class="pillar-dot" aria-hidden="true"></span></div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-number">02</span>
+            <div class="pillar-word">Build<span class="pillar-dot" aria-hidden="true"></span></div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-number">03</span>
+            <div class="pillar-word">Sell<span class="pillar-dot" aria-hidden="true"></span></div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-number">04</span>
+            <div class="pillar-word">Scale<span class="pillar-dot" aria-hidden="true"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         4. PROBLEM SECTION
+         ═══════════════════════════════════════════════════════ -->
+    <section class="problem section section-off-white" aria-labelledby="problem-heading">
+      <div class="container">
+        <span class="section-label" data-animate>The Problem</span>
+        <h2 id="problem-heading" class="display-md problem-headline" data-animate data-animate-delay="1">
+          Building a business can get <span class="serif-accent">lonely.</span>
+        </h2>
+
+        <p class="problem-intro" data-animate data-animate-delay="2">
+          You have ideas.<br>
+          You have ambitions.<br>
+          You may even have the knowledge.
+        </p>
+
+        <p class="problem-intro" data-animate data-animate-delay="2" style="margin-bottom: 1.5rem;">
+          But sometimes you don't have the right people around you to:
+        </p>
+
+        <ul class="problem-list" data-animate data-animate-delay="3">
+          <li>Challenge your thinking</li>
+          <li>Pressure-test your ideas</li>
+          <li>Help you see opportunities</li>
+          <li>Hold you accountable</li>
+          <li>Connect you to people</li>
+          <li>Help you make better business decisions</li>
+        </ul>
+
+        <p class="problem-closing" data-animate data-animate-delay="4">
+          Sometimes, the problem isn't that you need more information. You need a <span class="serif-accent">better environment.</span>
+        </p>
+
+        <div data-animate data-animate-delay="5">
+          <a href="#pricing" class="btn btn-primary btn-large" data-action="join">
+            I Want Into The Room <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         5. INTRODUCTION (Room Behind the Building)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="introduction section section-dark" aria-labelledby="intro-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Welcome</span>
+        <h2 id="intro-heading" class="display-lg intro-headline" data-animate data-animate-delay="1">
+          Welcome to the <span class="serif-accent">Room</span> behind the building.
+        </h2>
+        <p class="intro-desc" data-animate data-animate-delay="2">
+          The Shapers Room brings ambitious builders into one environment where business conversations go beyond motivation.
+        </p>
+
+        <div class="intro-pillars">
+          <div class="intro-pillar" data-animate data-animate-delay="2">
+            <h3 class="intro-pillar-title">Better Thinking</h3>
+            <p class="intro-pillar-desc">Business strategy, positioning and decision-making.</p>
+          </div>
+          <div class="intro-pillar" data-animate data-animate-delay="3">
+            <h3 class="intro-pillar-title">Better Business</h3>
+            <p class="intro-pillar-desc">Offers, sales, marketing, systems and revenue.</p>
+          </div>
+          <div class="intro-pillar" data-animate data-animate-delay="4">
+            <h3 class="intro-pillar-title">Better Connections</h3>
+            <p class="intro-pillar-desc">Relationships with people who are also building.</p>
+          </div>
+          <div class="intro-pillar" data-animate data-animate-delay="5">
+            <h3 class="intro-pillar-title">Better Execution</h3>
+            <p class="intro-pillar-desc">Turning ideas into action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         6. WHAT MEMBERS GET (Inside The Shapers Room)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="benefits section section-light" id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <span class="section-label" data-animate>What You Get</span>
+        <h2 id="benefits-heading" class="display-md benefits-headline" data-animate data-animate-delay="1">
+          Inside The Shapers Room
+        </h2>
+
+        <div class="benefits-grid">
+          <div class="benefit-item" data-animate data-animate-delay="1">
+            <span class="benefit-number">01</span>
+            <h3 class="benefit-title">Business Strategy</h3>
+            <p class="benefit-desc">Get clarity around your positioning, market, offers and next moves.</p>
+          </div>
+          <div class="benefit-item" data-animate data-animate-delay="2">
+            <span class="benefit-number">02</span>
+            <h3 class="benefit-title">Sales & Revenue</h3>
+            <p class="benefit-desc">Learn how to create demand, convert attention and build revenue.</p>
+          </div>
+          <div class="benefit-item" data-animate data-animate-delay="3">
+            <span class="benefit-number">03</span>
+            <h3 class="benefit-title">Frameworks</h3>
+            <p class="benefit-desc">Practical frameworks you can take directly into your business.</p>
+          </div>
+          <div class="benefit-item" data-animate data-animate-delay="4">
+            <span class="benefit-number">04</span>
+            <h3 class="benefit-title">Accountability</h3>
+            <p class="benefit-desc">Stop collecting information and start implementing.</p>
+          </div>
+          <div class="benefit-item" data-animate data-animate-delay="5">
+            <span class="benefit-number">05</span>
+            <h3 class="benefit-title">Collaboration</h3>
+            <p class="benefit-desc">Meet people who can become partners, clients, collaborators and opportunities.</p>
+          </div>
+          <div class="benefit-item" data-animate data-animate-delay="6">
+            <span class="benefit-number">06</span>
+            <h3 class="benefit-title">Access</h3>
+            <p class="benefit-desc">Access conversations, ideas, perspectives and opportunities that can shift your trajectory.</p>
+          </div>
+          <div class="benefit-item benefit-full" data-animate data-animate-delay="7">
+            <span class="benefit-number">07</span>
+            <h3 class="benefit-title">2030 Thinking</h3>
+            <p class="benefit-desc">Build beyond today's hustle and start thinking about what your business can become.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         7. BIG DIFFERENCE (Not Another WhatsApp Group)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="difference section section-dark" aria-labelledby="difference-heading">
+      <div class="container">
+        <span class="section-label" data-animate>The Difference</span>
+        <h2 id="difference-heading" class="display-lg difference-headline" data-animate data-animate-delay="1">
+          This is not another WhatsApp group.
+        </h2>
+
+        <div class="comparison" data-animate data-animate-delay="2">
+          <div class="comparison-col">
+            <div class="comparison-label">Ordinary Community</div>
+            <div class="comparison-item">Consume information</div>
+            <div class="comparison-item">Passive members</div>
+            <div class="comparison-item">Random conversations</div>
+            <div class="comparison-item">Networking</div>
+            <div class="comparison-item">Motivation</div>
+            <div class="comparison-item">Short-term thinking</div>
+          </div>
+          <div class="comparison-divider" aria-hidden="true"></div>
+          <div class="comparison-col">
+            <div class="comparison-label label-red">The Shapers Room</div>
+            <div class="comparison-item">Apply frameworks</div>
+            <div class="comparison-item">Active builders</div>
+            <div class="comparison-item">Strategic conversations</div>
+            <div class="comparison-item">Meaningful relationships</div>
+            <div class="comparison-item">Execution</div>
+            <div class="comparison-item">2030 thinking</div>
+          </div>
+        </div>
+
+        <div class="difference-statement" data-animate data-animate-delay="3">
+          <p class="difference-statement-text">
+            The community is the container.<br>
+            The <span class="text-yellow serif-accent">transformation</span> is the product.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         8. WHO BELONGS IN THE ROOM
+         ═══════════════════════════════════════════════════════ -->
+    <section class="audience section section-light" aria-labelledby="audience-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Who It's For</span>
+        <div class="audience-grid">
+          <div class="audience-main">
+            <h2 id="audience-heading" class="display-md audience-headline" data-animate data-animate-delay="1">
+              Who belongs in <span class="serif-accent">the Room?</span>
+            </h2>
+
+            <div class="audience-list">
+              <div class="audience-item" data-animate data-animate-delay="1">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Founders building serious businesses.</p>
+              </div>
+              <div class="audience-item" data-animate data-animate-delay="2">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Entrepreneurs ready for stronger structure and revenue.</p>
+              </div>
+              <div class="audience-item" data-animate data-animate-delay="3">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Creators turning attention into businesses.</p>
+              </div>
+              <div class="audience-item" data-animate data-animate-delay="4">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Professionals transitioning into entrepreneurship.</p>
+              </div>
+              <div class="audience-item" data-animate data-animate-delay="5">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Business owners who want to scale beyond themselves.</p>
+              </div>
+              <div class="audience-item" data-animate data-animate-delay="6">
+                <span class="audience-marker" aria-hidden="true"></span>
+                <p>Builders who know they have more to become.</p>
+              </div>
+            </div>
+
+            <p class="audience-closing" data-animate data-animate-delay="7">
+              You don't need to have everything figured out.<br>
+              You just need to be willing to <em>build.</em>
+            </p>
+          </div>
+
+          <div class="audience-visual" data-animate data-animate-delay="3">
+            <div class="audience-card">
+              <div class="audience-card-frame">
+                <img src="assets/images/TSR.jpg.jpeg" alt="The Shapers Room Emblem" class="audience-card-img">
+              </div>
+              <div class="audience-card-caption">
+                <span class="audience-card-tag">THE SHAPERS ROOM</span>
+                <span class="audience-card-sub">A Business-Building Environment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         9. 2030 SECTION
+         ═══════════════════════════════════════════════════════ -->
+    <section class="future section section-dark" id="2030" aria-labelledby="future-heading">
+      <div class="future-bg-image" aria-hidden="true">
+        <img src="assets/images/future-2030.png" alt="" loading="lazy">
+      </div>
+      <div class="future-watermark" aria-hidden="true">2030</div>
+
+      <div class="container future-content">
+        <span class="section-label" data-animate>The Future</span>
+        <h2 id="future-heading" class="display-lg future-headline" data-animate data-animate-delay="1">
+          What are you building for <span class="serif-accent">2030?</span>
+        </h2>
+
+        <div class="future-changes" data-animate data-animate-delay="2">
+          <p>The world of business is changing.</p>
+          <p>Technology is changing.</p>
+          <p>Customer behaviour is changing.</p>
+          <p>Distribution is changing.</p>
+          <p>Competition is changing.</p>
+          <p class="future-emphasis">
+            The Shapers Room exists for people who don't want to wait until the future arrives before they start preparing for it.
+          </p>
+        </div>
+
+        <div class="future-statement" data-animate data-animate-delay="3">
+          <p class="future-statement-text">
+            Don't just build a business that works today.
+          </p>
+          <p class="future-statement-secondary">
+            Build one that can <span class="serif-accent">matter tomorrow.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         10. WHY THE ROOM EXISTS (Wealth Section)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="wealth section section-off-white" id="about" aria-labelledby="wealth-heading">
+      <div class="container">
+        <span class="section-label" data-animate>The Founder</span>
+        <div class="wealth-grid">
+          <div class="wealth-image-wrapper" data-animate data-animate-delay="1">
+            <img src="assets/images/wealth-portrait.jpeg"
+                 alt="Wealth the Shaper, founder of The Shapers Room"
+                 class="wealth-image"
+                 loading="lazy">
+            <div class="wealth-image-accent" aria-hidden="true"></div>
+          </div>
+          <div class="wealth-content">
+            <h2 id="wealth-heading" class="heading-lg" data-animate data-animate-delay="1" style="margin-bottom: 0.5rem;">Why does this Room exist?</h2>
+            <p class="wealth-name" data-animate data-animate-delay="2">Wealth the Shaper</p>
+            <p class="wealth-title" data-animate data-animate-delay="2">Business Expert. Creative Thinker. Builder.</p>
+
+            <blockquote class="wealth-quote" data-animate data-animate-delay="3">
+              I'm building my own 1% in the world, creating ideas, frameworks, businesses and intellectual assets that can travel beyond me.
+            </blockquote>
+
+            <p class="wealth-philosophy" data-animate data-animate-delay="4">
+              The Shapers Room is an extension of that philosophy. A room for people who are building their own 1%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         10B. FEATURED SPEAKER & THOUGHT LEADER (Dr. Tinu Smith)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="speaker-section section section-dark" id="speaker" aria-labelledby="speaker-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Featured Thought Leader &amp; Speaker</span>
+        <div class="speaker-grid">
+          <div class="speaker-image-wrapper" data-animate data-animate-delay="1">
+            <div class="speaker-image-container">
+              <img src="assets/images/Dr. Tinu Smith.jpeg"
+                   alt="Dr. Tinu Smith, award-winning Nigerian fashion entrepreneur, business coach and thought leader"
+                   class="speaker-image"
+                   loading="lazy">
+              <div class="speaker-image-glow" aria-hidden="true"></div>
+            </div>
+            <div class="speaker-badge-tag">Guest Thought Leader</div>
+          </div>
+
+          <div class="speaker-content">
+            <h2 id="speaker-heading" class="display-md speaker-name" data-animate data-animate-delay="1">
+              Dr. Tinu <span class="serif-accent text-yellow">Smith</span>
+            </h2>
+            <p class="speaker-title" data-animate data-animate-delay="2">
+              CEO, Datina Designs Fashion House &amp; School | Founder, She Grows Africa &amp; Datcore Business Coaching Academy
+            </p>
+
+            <div class="speaker-pills" data-animate data-animate-delay="3">
+              <span class="speaker-pill">30+ Years Experience</span>
+              <span class="speaker-pill">Cornell Alumna</span>
+              <span class="speaker-pill">Goldman Sachs Scholar</span>
+              <span class="speaker-pill">UN Fashion Impact Fund</span>
+              <span class="speaker-pill">2022 Oyo State Woman of the Year</span>
+            </div>
+
+            <div class="speaker-bio" data-animate data-animate-delay="4">
+              <p>
+                Dr. Tinu Smith is an award-winning Nigerian fashion entrepreneur, business coach, and thought leader with over 30 years of experience building and scaling sustainable ventures. She is the Chief Executive Officer of Datina Designs Fashion House and Fashion School, a leading Afrocentric brand with retail presence in Ibadan and Lagos.
+              </p>
+              <p>
+                Through DatinaDesigns, she delivers Afrocentric ready-to-wear collections to a growing international clientele, with distribution across Nigeria, South Africa, Kenya, and the United Kingdom, positioning African fashion within the global market.
+              </p>
+              <p>
+                Dr. Tinu holds a background in Communication and Language Arts and is an alumna of Cornell University, where she studied Women's Entrepreneurship. She is also a Goldman Sachs Scholar from the Enterprise Development Centre at Pan-Atlantic University and holds an MBA from the International School of Management, Lagos.
+              </p>
+              <p>
+                She has collaborated on high-impact initiatives with organizations such as the Mastercard Foundation, Industrial Training Fund, and the United Nations Fashion Impact Fund. Her work focuses on women and youth empowerment, financial inclusion, and building scalable business systems.
+              </p>
+              <p>
+                As the Founder of She Grows Africa and Datcore Business Coaching Academy, Dr. Tinu has empowered over 10,000 women through vocational and entrepreneurial training. She mentors for global platforms including Tony Elumelu Foundation, Cherie Blair Foundation for Women, and WIMBIZ.
+              </p>
+              <p class="speaker-highlight-quote">
+                "A Fellow of the Chartered Institute of Corporate Mentoring and Coaching Nigeria, Dr. Tinu delivers actionable insights on entrepreneurship, business growth, women's empowerment, and building globally relevant African brands."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         11. WHAT MAKES IT DIFFERENT (Declaration)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="declaration section section-black-soft" aria-labelledby="declaration-heading">
+      <div class="container">
+        <span class="section-label" data-animate>The Difference</span>
+        <h2 id="declaration-heading" class="display-md declaration-headline" data-animate data-animate-delay="1">
+          You are not joining for information.
+        </h2>
+
+        <div class="declaration-words">
+          <span class="declaration-word" data-animate data-animate-delay="1">Perspective.</span>
+          <span class="declaration-word" data-animate data-animate-delay="2">Frameworks.</span>
+          <span class="declaration-word" data-animate data-animate-delay="3">Accountability.</span>
+          <span class="declaration-word" data-animate data-animate-delay="4">Access.</span>
+          <span class="declaration-word" data-animate data-animate-delay="5">Connection.</span>
+          <span class="declaration-word" data-animate data-animate-delay="6">Execution.</span>
+          <span class="declaration-word" data-animate data-animate-delay="7">Growth.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         12. TESTIMONIALS
+         ═══════════════════════════════════════════════════════ -->
+    <section class="testimonials section section-off-white" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Proof</span>
+        <h2 id="testimonials-heading" class="display-md testimonials-headline" data-animate data-animate-delay="1">
+          From people inside <span class="serif-accent">the Room.</span>
+        </h2>
+
+        <div class="testimonial-slider" data-animate data-animate-delay="2" aria-label="Testimonials">
+          <div id="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-item is-active">
+              <span class="testimonial-quote-mark" aria-hidden="true">"</span>
+              <p class="testimonial-quote">Before I joined The Shapers Room, I had a lot of ideas but honestly, I was scattered. I knew I wanted to grow my business, but I wasn't sure what to focus on.
+
+Being in the Room helped me start thinking differently about my business. The conversations made me question things I had previously accepted, and I began to see what actually needed my attention.
+
+For me, the biggest value isn't just the information. It's the clarity I get from being around people who are also serious about building.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-author-name">Nike Adeke</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-item">
+              <span class="testimonial-quote-mark" aria-hidden="true">"</span>
+              <p class="testimonial-quote">I didn't join The Shapers Room because I needed another place to learn.
+
+I've bought courses before. I joined because I wanted to actually improve how I was running my business.
+
+One of the things I implemented from the Room was how I positioned and presented my offer. It completely changed the conversations I was having with potential customers, and I started getting better responses and conversions.
+
+The difference for me is that the things discussed in the Room don't just stay as ideas. You're constantly pushed to actually do something with them.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-author-name">Precious</span>
+                <span class="testimonial-author-role">Wig & Textile Business</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-item">
+              <span class="testimonial-quote-mark" aria-hidden="true">"</span>
+              <p class="testimonial-quote">What surprised me most about The Shapers Room was the people.
+
+I expected another business community where people introduce themselves, drop a few messages and eventually disappear. It wasn't that.
+
+The conversations, the questions people ask and the way everyone is building different things exposed me to perspectives I wouldn't have had on my own.
+
+Sometimes you don't need another course.
+
+You need to be in a room that makes you think bigger. That's what the Shapers Room has been for me.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-author-name">Mr Richardson</span>
+                <span class="testimonial-author-role">Entrepreneur</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-item">
+              <span class="testimonial-quote-mark" aria-hidden="true">"</span>
+              <p class="testimonial-quote">One thing I've realized about Wealth is that he doesn't just give you an answer. He makes you question why you're thinking the way you're thinking in the first place.
+
+There have been moments in the Room where I came in with what I thought was a business problem, and by the end of the conversation, I realized I was looking at the problem completely wrong.
+
+That's the kind of value that's difficult to put a price on because it changes how you make decisions, not just what you know.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-author-name">Anonymous</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-item">
+              <span class="testimonial-quote-mark" aria-hidden="true">"</span>
+              <p class="testimonial-quote">The biggest change for me has been how I see myself as a business owner.
+
+I used to think about my business mostly in terms of making sales and getting through the next month. Being in The Shapers Room has made me think beyond that.
+
+I'm now asking different questions: What am I actually building? Can this business function beyond me? What systems do I need?
+
+What can this become in the next five years?
+
+That's what makes the Room different for me. It isn't just helping me run my business. It's changing the way I think about what I'm building.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-author-name">Salem</span>
+                <span class="testimonial-author-role">CEO, OuRs Salon and Boutique</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-controls">
+            <button class="testimonial-nav-btn testimonial-prev" aria-label="Previous testimonial">←</button>
+            <div class="testimonial-dots" role="tablist" aria-label="Testimonial navigation"></div>
+            <button class="testimonial-nav-btn testimonial-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         13. WHAT HAPPENS AFTER JOINING (Steps)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="onboarding section section-light" aria-labelledby="onboarding-heading">
+      <div class="container">
+        <span class="section-label" data-animate>After You Join</span>
+        <h2 id="onboarding-heading" class="display-md onboarding-headline text-center" data-animate data-animate-delay="1">
+          What happens next?
+        </h2>
+
+        <div class="steps">
+          <div class="step" data-animate data-animate-delay="1">
+            <div class="step-number">1</div>
+            <p class="step-text">You join The Shapers Room.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="2">
+            <div class="step-number">2</div>
+            <p class="step-text">You receive your onboarding and access details.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="3">
+            <div class="step-number">3</div>
+            <p class="step-text">You enter the environment and meet other builders.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="4">
+            <div class="step-number">4</div>
+            <p class="step-text">You begin accessing the conversations, frameworks and activities inside.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="5">
+            <div class="step-number">5</div>
+            <p class="step-text">You start implementing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         14. OFFER + 15. PRICING (Combined dark section)
+         ═══════════════════════════════════════════════════════ -->
+    <section class="offer section section-dark" aria-labelledby="offer-heading">
+      <div class="container">
+        <span class="section-label" data-animate>The Offer</span>
+        <h2 id="offer-heading" class="display-md offer-headline" data-animate data-animate-delay="1">
+          Your access to The Shapers Room includes:
+        </h2>
+
+        <div class="offer-list" id="offer-container" data-animate data-animate-delay="2">
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Membership and access to The Shapers Room</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Business-building conversations</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Strategic frameworks</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Sales and marketing insights</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Accountability</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>Networking and collaboration opportunities</span>
+          </div>
+          <div class="offer-item">
+            <span class="offer-check" aria-hidden="true">✓</span>
+            <span>2030-focused business thinking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section section-dark" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="pricing-box" data-animate>
+          <h2 id="pricing-heading" class="pricing-label">Enter The Shapers Room</h2>
+          <div class="pricing-amount">₦15,000</div>
+          <div class="pricing-period">One Payment / Monthly</div>
+          <div class="pricing-cta">
+            <a href="#" class="btn btn-primary btn-xl" data-action="join">
+              Join The Shapers Room <span class="btn-arrow">→</span>
+            </a>
+          </div>
+          <div class="pricing-support">
+            <span>Secure payment</span>
+            <span>Fast access</span>
+            <span>Contact us for refund policy details</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         16. OBJECTION HANDLING
+         ═══════════════════════════════════════════════════════ -->
+    <section class="objections section section-light" aria-labelledby="objections-heading">
+      <div class="container">
+        <span class="section-label" data-animate>Common Questions</span>
+        <h2 id="objections-heading" class="display-md objections-headline" data-animate data-animate-delay="1">
+          But what if...?
+        </h2>
+
+        <div class="accordion" id="objections-container" data-animate data-animate-delay="2">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              "I don't have a big business yet."
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>You don't need to. The room is for builders at different stages who are serious about growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              "I already know a lot about business."
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Good. The goal isn't to collect more information. It's to sharpen your thinking and execution.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              "I don't have time."
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>The purpose isn't to give you more things to consume. It's to help you make better business decisions with the time you already have.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              "Is this just another entrepreneur group?"
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>No. The Shapers Room is intentionally built around business thinking, execution, relationships and long-term positioning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         17. FINAL CONVERSION SECTION
+         ═══════════════════════════════════════════════════════ -->
+    <section class="final-cta section section-dark" aria-labelledby="final-cta-heading">
+      <div class="final-cta-glow" aria-hidden="true"></div>
+      <div class="container final-cta-content">
+        <p class="final-cta-statement display-lg" data-animate>
+          Your next level may not need more information.<br>
+          It may need a <span class="serif-accent">better room.</span>
+        </p>
+
+        <div class="final-cta-brand" data-animate data-animate-delay="1">
+          <h2 id="final-cta-heading">The Shapers Room</h2>
+        </div>
+
+        <div class="final-cta-pillars" data-animate data-animate-delay="2">
+          <span class="final-cta-pillar">Think<span class="dot">.</span></span>
+          <span class="final-cta-pillar">Build<span class="dot">.</span></span>
+          <span class="final-cta-pillar">Sell<span class="dot">.</span></span>
+          <span class="final-cta-pillar">Scale<span class="dot">.</span></span>
+        </div>
+
+        <div data-animate data-animate-delay="3">
+          <a href="#pricing" class="btn btn-primary btn-xl" data-action="join">
+            Join The Shapers Room <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         18. FAQ
+         ═══════════════════════════════════════════════════════ -->
+    <section class="faq section section-off-white" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <span class="section-label" data-animate>FAQ</span>
+        <h2 id="faq-heading" class="display-md faq-headline" data-animate data-animate-delay="1">
+          Frequently asked questions.
+        </h2>
+
+        <div class="accordion" id="faq-container" data-animate data-animate-delay="2">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              What exactly is The Shapers Room?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>The Shapers Room is a business-building environment designed to help ambitious entrepreneurs, founders and creators think better, build better, sell better and position their businesses for the future. It is built around strategic conversations, practical frameworks, accountability and meaningful relationships.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Who is The Shapers Room for?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>It is for founders, entrepreneurs, creators, professionals transitioning into business, and anyone who is serious about building something meaningful. You do not need to have everything figured out. You just need to be willing to build.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              What do I get when I join?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>You get membership and access to The Shapers Room, business-building conversations, strategic frameworks, sales and marketing insights, accountability, networking and collaboration opportunities, and 2030-focused business thinking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              How much does it cost?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Please see the pricing section above for current pricing details.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              How do I access the Room after payment?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>After payment, you will receive your onboarding and access details to enter the environment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Is this for beginners?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>The Shapers Room is for builders at different stages. Whether you are just starting or already running a business, the value comes from better thinking, better conversations and better execution.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Is this only for business owners?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>No. If you are building something, whether a business, a brand, a creative practice or transitioning from employment into entrepreneurship, The Shapers Room is designed for you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              How often are activities or training held?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Details about the schedule of activities and training sessions will be shared upon joining.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Can I cancel my membership?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Please contact us directly for information about cancellation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Do I get access immediately after payment?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Access details are provided after your payment is confirmed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              Is there a refund policy?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content" aria-hidden="true" style="max-height: 0px;">
+              <div class="accordion-inner">
+                <p>Please contact us directly for details about our refund policy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       19. FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#" class="footer-brand" aria-label="The Shapers Room homepage">THE SHAPERS ROOM</a>
+      <span class="footer-tagline">Think. Build. Sell. Scale.</span>
+      <div class="footer-cta">
+        <a href="#pricing" class="btn btn-primary" data-action="join">
+          Join The Shapers Room <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <div class="footer-bottom-row">
+        <p class="footer-copy">&copy; <span id="footer-year">2025</span> The Shapers Room. All rights reserved.</p>
+        <p class="footer-credit">Designed by <a href="https://qorv.org" target="_blank" rel="noopener noreferrer" class="qorv-link">QORV</a></p>
+      </div>
+      <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
