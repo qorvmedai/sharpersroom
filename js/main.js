@@ -499,6 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function initWelcomeScreen() {
         const welcomeScreen = document.getElementById('welcome-screen');
         const welcomeVideo = document.getElementById('welcome-video');
+        const welcomePoster = document.getElementById('welcome-poster');
         const skipBtn = document.getElementById('welcome-skip');
 
         if (!welcomeScreen) return;
@@ -525,10 +526,16 @@ document.addEventListener('DOMContentLoaded', function () {
             skipBtn.addEventListener('click', dismissWelcome);
         }
 
-        // Safety fallback timer: auto dismiss after 5 seconds max so user never gets stuck
-        const maxTimer = setTimeout(dismissWelcome, 5000);
+        // Safety fallback timer: auto dismiss after 6s max so user never gets stuck
+        const maxTimer = setTimeout(dismissWelcome, 6000);
 
         if (welcomeVideo) {
+            welcomeVideo.addEventListener('playing', () => {
+                if (welcomePoster) {
+                    welcomePoster.classList.add('is-hidden');
+                }
+            });
+
             welcomeVideo.addEventListener('ended', () => {
                 clearTimeout(maxTimer);
                 dismissWelcome();
@@ -547,12 +554,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const playPromise = welcomeVideo.play();
             if (playPromise !== undefined) {
                 playPromise.catch(() => {
-                    // Autoplay restricted by browser - fallback to dismiss after 2s
-                    setTimeout(dismissWelcome, 2000);
+                    // Autoplay restricted by browser - show poster then dismiss after 3s
+                    setTimeout(dismissWelcome, 3000);
                 });
             }
         } else {
-            setTimeout(dismissWelcome, 2000);
+            setTimeout(dismissWelcome, 2500);
         }
     }
 

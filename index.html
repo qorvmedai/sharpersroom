@@ -26,23 +26,22 @@
        0. WELCOME VIDEO SCENE
        ═══════════════════════════════════════════════════════ -->
   <div id="welcome-screen" class="welcome-screen" role="dialog" aria-label="Welcome video intro">
-    <div class="welcome-video-wrapper">
+    <div class="welcome-video-card">
+      <img src="assets/images/TSR.jpg.jpeg" alt="The Shapers Room Logo" id="welcome-poster" class="welcome-poster-img">
       <video id="welcome-video"
              autoplay
              muted
              playsinline
              webkit-playsinline
              preload="auto"
-             poster="assets/images/TSR.jpg.jpeg"
              aria-label="The Shapers Room welcome video">
         <source src="assets/images/welcome-video.mp4" type="video/mp4">
         <source src="assets/images/IMG_3831.MOV.mp4" type="video/mp4">
       </video>
-      <div class="welcome-overlay-vignette" aria-hidden="true"></div>
-      <button id="welcome-skip" class="welcome-skip-btn" aria-label="Skip video intro">
-        Skip &rarr;
-      </button>
     </div>
+    <button id="welcome-skip" class="welcome-skip-btn" aria-label="Skip video intro">
+      Enter The Room <span class="btn-arrow">&rarr;</span>
+    </button>
   </div>
 
   <!-- ═══════════════════════════════════════════════════════
