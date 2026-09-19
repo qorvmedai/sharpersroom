@@ -494,15 +494,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /**
-     * 11. WELCOME SPLASH SCREEN
+     * 11. WELCOME VIDEO SCENE
      */
     function initWelcomeScreen() {
         const welcomeScreen = document.getElementById('welcome-screen');
+        const welcomeVideo = document.getElementById('welcome-video');
         const skipBtn = document.getElementById('welcome-skip');
 
         if (!welcomeScreen) return;
 
-        // Prevent body scroll while welcome screen is active
+        // Lock body scroll while video plays
         document.body.style.overflow = 'hidden';
 
         let dismissed = false;
@@ -512,6 +513,9 @@ document.addEventListener('DOMContentLoaded', function () {
             dismissed = true;
             welcomeScreen.classList.add('is-hidden');
             document.body.style.overflow = '';
+            if (welcomeVideo) {
+                welcomeVideo.pause();
+            }
             setTimeout(() => {
                 welcomeScreen.style.display = 'none';
             }, 800);
@@ -521,8 +525,21 @@ document.addEventListener('DOMContentLoaded', function () {
             skipBtn.addEventListener('click', dismissWelcome);
         }
 
-        // Auto dismiss after 3.8 seconds for smooth entrance
-        setTimeout(dismissWelcome, 3800);
+        if (welcomeVideo) {
+            // Dismiss when video finishes playing
+            welcomeVideo.addEventListener('ended', dismissWelcome);
+
+            // Attempt video playback
+            const playPromise = welcomeVideo.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // If autoplay restricted, auto-dismiss after 9 seconds fallback
+                    setTimeout(dismissWelcome, 9000);
+                });
+            }
+        } else {
+            setTimeout(dismissWelcome, 4000);
+        }
     }
 
     // Initialize everything in order
