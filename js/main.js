@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', function () {
             welcomeScreen.classList.add('is-hidden');
             document.body.style.overflow = '';
             if (welcomeVideo) {
-                welcomeVideo.pause();
+                try { welcomeVideo.pause(); } catch(e) {}
             }
             setTimeout(() => {
                 welcomeScreen.style.display = 'none';
@@ -525,20 +525,34 @@ document.addEventListener('DOMContentLoaded', function () {
             skipBtn.addEventListener('click', dismissWelcome);
         }
 
-        if (welcomeVideo) {
-            // Dismiss when video finishes playing
-            welcomeVideo.addEventListener('ended', dismissWelcome);
+        // Safety fallback timer: auto dismiss after 5 seconds max so user never gets stuck
+        const maxTimer = setTimeout(dismissWelcome, 5000);
 
-            // Attempt video playback
+        if (welcomeVideo) {
+            welcomeVideo.addEventListener('ended', () => {
+                clearTimeout(maxTimer);
+                dismissWelcome();
+            });
+
+            welcomeVideo.addEventListener('error', () => {
+                clearTimeout(maxTimer);
+                dismissWelcome();
+            });
+
+            welcomeVideo.addEventListener('stalled', () => {
+                setTimeout(dismissWelcome, 1500);
+            });
+
+            // Attempt video playback explicitly
             const playPromise = welcomeVideo.play();
             if (playPromise !== undefined) {
                 playPromise.catch(() => {
-                    // If autoplay restricted, auto-dismiss after 9 seconds fallback
-                    setTimeout(dismissWelcome, 9000);
+                    // Autoplay restricted by browser - fallback to dismiss after 2s
+                    setTimeout(dismissWelcome, 2000);
                 });
             }
         } else {
-            setTimeout(dismissWelcome, 4000);
+            setTimeout(dismissWelcome, 2000);
         }
     }
 

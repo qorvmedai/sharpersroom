@@ -2194,6 +2194,9 @@ ul, ol {
 .welcome-screen {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
   z-index: 999999;
   background: #0A0A0A;
   display: flex;
@@ -2203,6 +2206,8 @@ ul, ol {
   visibility: visible;
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .welcome-screen.is-hidden {
@@ -2213,24 +2218,31 @@ ul, ol {
 
 .welcome-video-wrapper {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000;
+  background: #0A0A0A;
   overflow: hidden;
 }
 
 .welcome-video-wrapper video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   display: block;
+}
+
+.welcome-overlay-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(10, 10, 10, 0.5) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .welcome-skip-btn {
@@ -2238,7 +2250,7 @@ ul, ol {
   bottom: 2rem;
   right: 2rem;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(10, 10, 10, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: var(--color-white-pure);
   padding: 0.75rem 1.75rem;
@@ -2254,6 +2266,7 @@ ul, ol {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .welcome-skip-btn:hover {
