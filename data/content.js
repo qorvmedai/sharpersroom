@@ -22,6 +22,7 @@ window.SHAPERS_CONTENT = {
     period: 'Monthly',
     paymentModel: 'ONE PAYMENT / MONTHLY',
     ctaText: 'JOIN THE SHAPERS ROOM',
+    ctaUrl: 'https://nestuge.com/theshapers',
     supportingInfo: [
       'Secure payment',
       'Fast access',
